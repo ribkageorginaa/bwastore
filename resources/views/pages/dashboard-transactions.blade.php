@@ -1,0 +1,155 @@
+@extends('layouts.dashboard')
+
+@section('title')
+    Store Dashboard Transactions
+@endsection
+
+@section('content')
+<div
+            class="section-content section-dashboard-home"
+            data-aos="fade-up"
+          >
+            <div class="container-fluid">
+              <div class="dashboard-heading">
+                <h2 class="dashboard-title">Transactions</h2>
+                <p class="dashboard-subtitle">
+                  Look what you have made today!
+                </p>
+              </div>
+              <div class="dashboard-content">
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link active"
+                      id="sell-tab"
+                      data-toggle="tab"
+                      href="#sell"
+                      role="tab"
+                      aria-controls="sell"
+                      aria-selected="true"
+                      >Sell Product</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="buy-tab"
+                      data-toggle="tab"
+                      href="#buy"
+                      role="tab"
+                      aria-controls="buy"
+                      aria-selected="false"
+                      >Buy Product</a
+                    >
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="sell"
+                    role="tabpanel"
+                    aria-labelledby="sell-tab"
+                  >
+                <div class="row">
+                  <div class="col-12 mt-2">
+                
+                    <a
+                      class="card card-list d-block"
+                      href="/dashboard-transactions-details.html"
+                    >
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <img
+                              src="/images/dashboard-icon-product-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col-md-4">
+                            Coffee Latte
+                          </div>
+                          <div class="col-md-3">
+                            Nanon
+                          </div>
+                          <div class="col-md-3">
+                            14 Desember, 2020
+                          </div>
+                          <div class="col-md-1 d-none d-md-block">
+                            <img
+                              src="/images/dashboard-arrow-right.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      class="card card-list d-block"
+                      href="/dashboard-transactions-details.html"
+                    >
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <img
+                              src="/images/dashboard-icon-product-2.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col-md-4">
+                            LeBrone X
+                          </div>
+                          <div class="col-md-3">
+                            Du-shik
+                          </div>
+                          <div class="col-md-3">
+                            09 January, 2020
+                          </div>
+                          <div class="col-md-1 d-none d-md-block">
+                            <img
+                              src="/images/dashboard-arrow-right.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      class="card card-list d-block"
+                      href="/dashboard-transactions-details.html"
+                    >
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <img
+                              src="/images/dashboard-icon-product-3.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col-md-4">
+                            Kursi Nyaman
+                          </div>
+                          <div class="col-md-3">
+                            Ji-pyeong
+                          </div>
+                          <div class="col-md-3">
+                            09 April, 2020
+                          </div>
+                          <div class="col-md-1 d-none d-md-block">
+                            <img
+                              src="/images/dashboard-arrow-right.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+      </div>
+
+@endsection
